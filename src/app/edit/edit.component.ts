@@ -8,11 +8,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class EditComponent implements OnInit {
   id:any
+  form:any;
   constructor(private b:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.id=this.b.snapshot.paramMap.get('id')
     console.log(this.id);
-  }
 
+    
+
+
+}
 }
