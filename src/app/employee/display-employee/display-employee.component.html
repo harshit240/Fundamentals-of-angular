@@ -45,7 +45,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <!-- <form [formGroup]="form" (ngSubmit)="addblog()"> -->
+        <form [formGroup]="form" (ngSubmit)="addblog()">
           <div class="form-group">
             <label for="exampleFormControlInput1" >Title</label>
             <input formControlName="title" class="form-control" id="exampleFormControlInput1" placeholder="Enter the title...">
@@ -58,12 +58,13 @@
             <label for="exampleFormControlInput1" >Description</label>
             <input formControlName="description" class="form-control" id="exampleFormControlInput3" placeholder="Description">
           </div><br>
-        <!-- </form> -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
+      
     </div>
   </div>
-</div>
