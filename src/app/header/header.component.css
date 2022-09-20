@@ -1,0 +1,19 @@
+.navbar{
+   background:linear-gradient(rgba(7,7,8, 0.6),rgba(6, 7, 8, 0.6));
+   
+}
+.img{
+    width: 65px;
+}
+.navbarNav{
+    font-size:17px;
+}
+.navbarNav ul li a{
+    padding-right: 17px;
+    color: white;
+}
+
+.navbarNav ul li a:hover{
+    color: #fbaa1a;
+    transition: 0.6s ease;
+}

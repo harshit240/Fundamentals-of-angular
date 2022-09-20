@@ -1,0 +1,14 @@
+<h1 class="bg-success text-black text-center p-4">{{parenttochild}}</h1>
+<table class="table table-bordered text-striped table-hover table-responsive table-warning">
+    <tr class="bg-danger text-black">
+        <th>Name:</th>
+        <th>age</th>
+        <th>email:</th>9puik.nm 
+    </tr>
+    <tr *ngFor="let std of student">
+        <td>{{std.id}}</td>
+        <td>{{std.name}}</td>
+        <td>{{std.age}}</td>
+        <td>{{std.email}}</td>
+    </tr>
+</table>

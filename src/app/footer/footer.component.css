@@ -1,0 +1,24 @@
+.foot{
+	background-color: #111215;
+}
+
+#para{
+	font-family: prague;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+}
+.social-icons{
+	display: inline-block;
+	font-size: 30px;
+}
+.social-icons a{
+	color: #ffad00;
+}
+.copyright_text span{
+	letter-spacing: 2px;
+	font-size: 13px;
+}
+#footer_content {
+	padding-left: 32px;
+    padding-right: 32px;
+}

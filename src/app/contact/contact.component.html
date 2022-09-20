@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="contact_banner">
+            <h1 class="contact_text text-center">CONTACT US</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-sm-6 mt-4">
+            
+                <span class="send_msg">SEND US MESSAGE</span>
+                <input type="text" name="" class="form-control mt-4" placeholder="Name">
+                <input type="text" name="" class="form-control mt-4" placeholder="Email">
+                <input type="text" name="" class="form-control mt-4" placeholder="Phone">
+                <textarea class="form-control mt-4" placeholder="Message"></textarea>
+                <button class="btn btn-danger mt-4 shadow-lg" style="background:#fcc975; border:0; padding: 12px 26px;">Submit</button>
+            </div>
+
+            <div class="col-sm-6 mt-4">
+                    <h4 class="contact">CONTACT INFO</h4>
+                <div class="f mt-4">
+                        <b style="color:#ffad00;" >Address</b>
+                    <div>6, Chanakyapuri Shopping Complex, 48, Malcha Marg, New Delhi 110021</div><br><br>
+                
+                    <b style="color:#ffad00;">For Franchise Enquiry</b>
+                    <div  class="">Mobile:<span style="color:#ffad00;"> +91 9313663486</span></div>
+                    <div>Email: <span style="color:#ffad00;">franchise@firstfiddle.in</span></div><br><br>
+
+                    <b style="color:#ffad00;">For HR Enquiry</b>
+                    <div>Mobile:<span style="color:#ffad00;">+91 9999304427</span></div>
+                    <div>Email: <span style="color:#ffad00;">careers@firstfiddle.in</span></div><br><br>
+
+                    <b style="color:#ffad00;">For Other Enquiry</b>
+                    <div>Mobile:<span style="color:#ffad00;">+91 7676380000</span></div>
+                    <div>Email: <span style="color:#ffad00;">customercare@firstfiddle.in</span></div>
+                    <div>Open: Monday – Saturday 10:30 – 19:30</div>
+                </div>
+            </div>
+        </div>
+    </div> <!--container div end -->
+</div> <!-- container-fluid div end -->
+
+<table class="table table-bordered text-striped table-hover table-responsive table-warning">
+    <tr>
+        <th>Name:</th>
+        <th>age</th>
+        <th>email:</th>
+    </tr>
+    <tr *ngFor="let d of data">
+        <td>{{d.id}}</td>
+        <td>{{d.name}}</td>
+        <td>{{d.age}}</td>
+        <td>{{d.email}}</td>
+    </tr>
+</table>

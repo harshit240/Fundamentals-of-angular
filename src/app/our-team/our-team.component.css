@@ -1,0 +1,52 @@
+
+.our_team_bannner_img{
+	background: url(https://www.firstfiddle.in/assets/images/new-our-team.jpg);
+	background-size:cover;
+	background-position: center;
+	width: 100%;
+	height: 609px;
+}
+.our_team_text{
+	font-size: 90px;
+    letter-spacing: 3px;
+    color: white;
+    line-height: 467px;
+}
+.ceo_content{
+	font-size: 15px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.social_icons{
+	display: inline-block;
+	font-size: 30px;
+}
+.social_icons a{
+	color: #ffad00;
+}
+.box{
+	text-align: center;
+    color: black;
+    position: relative;
+    margin-top: 20px;
+}
+
+.box_content{
+	padding: 20px;
+    /*position: relative;
+    top: -100px;*/
+    color: #fbaa1a;
+}
+.title{
+	font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+.post{
+	display: block;
+    padding: 3px 0;
+    font-size: 15px;
+}

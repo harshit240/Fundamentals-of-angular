@@ -1,0 +1,24 @@
+<div class="text-center bg-info p-5 text-black font-weight-bold display-3">
+    <h1>{{"ANIL" | lowercase}}</h1>
+    <h1>{{"himanshu" | titlecase}}</h1>
+
+    <p>My name is: <span class="text-dark">{{ myname | lowercase }}</span> ngpipe</p>
+    <br>
+    <br>
+    <p>My name is: <span class="text-dark">{{ myname | slice:4 }}</span> ngpipe</p>
+    <p>My name is: <span class="text-dark">{{ myname | slice:4:9 }}</span> ngpipe</p>
+    
+</div>
+
+<div class="text-black  text-center font-weight-bold display-3">
+    <p>My Date of birth:<span class="text-dark">{{mydate | date}}</span></p>
+    <p>My Date of birth:<span class="text-dark">{{mydate | date:'shortTime'}}</span></p>
+    <p>My Number<span class="text-dark">{{mynumber | number}}</span></p>
+    <p>My Number<span class="text-dark">{{mynumber | percent}}</span></p>
+    <p>My currency:<span class="text-dark">{{mycurrency | currency:'INR'}}</span></p>
+</div>
+
+
+<br>
+<br>
+

@@ -1,0 +1,21 @@
+<!-- <p>if works!</p> -->
+
+<h1 *ngIf="show">Hello Man!</h1>
+
+
+<div *ngIf="department==='computer' then correct else wrong" >
+
+</div>
+
+<ng-template #correct>
+    <h1 class="text-center text-black bg-sucsess p-3">
+        sir you are learning
+    </h1>
+</ng-template>
+
+<ng-template #wrong>
+    <h1 class="text-center text-black bg-sucsess p-3">
+        sir you are not learning
+    </h1>
+</ng-template>
+

@@ -1,0 +1,31 @@
+.contact_banner{
+    background: url(https://www.firstfiddle.in/assets/images/CONTACT-US.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 609px;
+}
+.contact_text{
+    font-family: prague;
+    font-size: 90px;
+    letter-spacing: 3px;
+    color: white;
+    line-height: 680px;
+}
+
+.send_msg{
+    text-transform: uppercase;
+    font-family: prague;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: black;
+}
+.contact{
+    letter-spacing: 2px;
+    font-family: prague;
+    font-size: 28px;
+}
+.f{
+    font-size: 17px;
+    font-family: prague;
+}

@@ -1,0 +1,27 @@
+.press_release_banner{
+    background: url(https://www.firstfiddle.in/assets/images/press-new-1.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 609px;
+}
+.release_content{
+    font-family: prague;
+    font-size: 90px;
+    letter-spacing: 3px;
+    color: white;
+    line-height: 650px;
+}
+.press_images{
+    padding: 20px;
+}
+.img{
+	width: 80%;
+}
+@media(max-width: 768px)
+{
+	.img{
+		width: 100%;
+		margin-top: 26px;
+	}
+}

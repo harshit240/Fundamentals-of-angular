@@ -1,0 +1,84 @@
+	
+<div class="container-fluid">
+    <div class="row">
+        <div class="our_team_bannner_img">
+            <h3 class="our_team_text text-center" style="padding:0;margin:0;">MET THE TEAM</h3>
+        </div>
+    </div> <!-- Row end -->
+</div><!-- container-fluid end -->
+
+<div class="container bg-white pt-5">
+<div class="row">
+    <div class="col-md-4 text-center">
+        <img src="https://www.firstfiddle.in/assets/images/priyank-our%20team.jpg" height="420px" class="d-block shadow-lg w-100">
+    </div>
+    <div class="col-md-8 text-left">
+        <h2 class="pt-1" style="letter-spacing: 2px; font-family: prague; font-size: 40px;"> Priyank Sukhija</h2>
+        <h5 style="letter-spacing: 2px; font-family: prague;">C.E.O. & M.D.</h5>
+        <br>
+        <p class="ceo_content text-justify">A 19-year-old dropout kid, who was just setting up his first venture, envisioned what nobody thought would make him a business tycoon in the hospitality industry. Once he began, there was no stopping this entrepreneur from reaching the heights he has reached today. It is the passion and creative streak of Priyank Sukhija that has made him the most watched-out restaurateur of today’s time. Coming from a family of lawyers, he ventured into the business world on his own with Lazeez Affaire in 1999 and has never looked back since.</p>
+        <button class="btn ml-1" style="background: #fbaa1a; color:white;">Read More</button>
+        <br>
+        <div class="social_icons d-block">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>&nbsp;
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>&nbsp;
+            <a href=""><i class="fa-brands fa-twitter"></i></a>&nbsp;
+            <a href=""><i class="fa-brands fa-instagram"></i></a>&nbsp;
+        </div>
+    </div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-md-4 col-sm-6 box">
+        <img src="https://app.firstfiddle.in/images/ff_meet_team/YPAshok.jpg" width="364px" class="shadow-lg" height="364px">
+        <div class="box_content">
+            <h3 class="title" style="padding: 0; margin: 0;">Y. P. ASHOK</h3>
+            <span class="post">Chairman</span>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 box">
+        <img src="https://app.firstfiddle.in/images/ff_meet_team/B.R.-Sachdeva.jpg" width="364px" class="shadow-lg" height="364px">
+        <div class="box_content">
+            <h3 class="title">B.R. SACHDEVA</h3>
+            <span class="post">Director Finance & Legal</span>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 box">
+        <img src="https://app.firstfiddle.in/images/ff_meet_team/Sagar-Bajaj.jpg" width="364px" class="shadow-lg" height="364px">
+        <div class="box_content">
+            <h3 class="title">SAGAR BAJAJ</h3>
+            <span class="post">Corporate Chef</span>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 box">
+        <img src="https://app.firstfiddle.in/images/ff_meet_team/JAY-PHOTO-1-1.jpg" width="364px" class="shadow-lg" height="364px">
+        <div class="box_content">
+            <h3 class="title">JAY SHANKAR NATRAJ</h3>
+            <span class="post">Franchise Lead</span>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 box">
+        <img src="https://app.firstfiddle.in/images/ff_meet_team/vibhutiPR.jpg" width="364px" class="shadow-lg" height="364px">
+        <div class="box_content">
+            <h3 class="title" >VIBHUTI SOOD</h3>
+            <span class="post">PR And Communications Head</span>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<table class="table table-bordered text-striped table-hover table-responsive table-warning">
+    <tr>
+        <th>Name:</th>
+        <th>age</th>
+        <th>email:</th>
+    </tr>
+    <tr *ngFor="let d of data">
+        <td>{{d.id}}</td>
+        <td>{{d.name}}</td>
+        <td>{{d.age}}</td>
+        <td>{{d.email}}</td>
+    </tr>
+</table>

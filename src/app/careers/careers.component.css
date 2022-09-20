@@ -1,0 +1,34 @@
+
+.careers_banner{
+    background: url(https://www.firstfiddle.in/assets/images/new-careers-1.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 609px;
+}
+.careers_text{
+    font-size: 90px;
+    letter-spacing: 3px;
+    color: white;
+    line-height: 680px;
+    font-family: prague;
+}
+.p{
+    font-size:18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: prague;
+    line-height: 30px;
+}
+.g{
+    font-size:42px;
+    letter-spacing: 2px;
+    font-family: prague;
+}
+.e{
+    font-size:22px;
+    letter-spacing: 2px;
+}
+.send_msg{
+    font-size: 22px;
+}
