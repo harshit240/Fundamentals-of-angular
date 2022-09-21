@@ -5,6 +5,7 @@ import { BrandsComponent } from './brands/brands.component';
 import { CareersComponent } from './careers/careers.component';
 import { ContactComponent } from './contact/contact.component';
 import { EditComponent } from './edit/edit.component';
+import { ViewEmployeeComponent } from './employee/view-employee/view-employee.component';
 import { FranchiseComponent } from './franchise/franchise.component';
 import { HomeComponent } from './home/home.component';
 import { OurTeamComponent } from './our-team/our-team.component';
@@ -57,6 +58,10 @@ const routes: Routes = [
   {
     path:"**",
     component:PagenotfoundComponent
+  },
+  {
+    path:"blogview/:id",
+    component:ViewEmployeeComponent
   }
   
 ];

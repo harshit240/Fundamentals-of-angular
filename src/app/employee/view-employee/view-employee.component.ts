@@ -11,5 +11,5 @@ export class ViewEmployeeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }

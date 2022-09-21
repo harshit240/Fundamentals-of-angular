@@ -12,4 +12,12 @@ export class EmployeeService {
     console.log(blogall);
     return this.http.post(this.url+'bloginsert',blogall) /* Network code*/
   }
+  
+  showdata(){
+    return this.http.get(this.url+'getall')
+  }
+
+  viewdata(id:any){
+    return this.http.get(this.url+'blogview/'+id)
+  }
 }

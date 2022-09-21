@@ -6,6 +6,9 @@ import { DisplayEmployeeComponent } from './display-employee/display-employee.co
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
+import { Router } from 'express';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -19,12 +22,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
   exports:[DisplayEmployeeComponent,
     EditEmployeeComponent,
     ViewEmployeeComponent,
-    AddEmployeeComponent]
+    AddEmployeeComponent,
+    
+  ]
   
 })
 export class EmployeeModule { }
