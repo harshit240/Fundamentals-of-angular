@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { TeacherRoutingModule } from './teacher-routing.module';
 import { ViewComponent } from './view/view.component';
 import { DisplayComponent } from './display/display.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
