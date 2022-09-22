@@ -1,0 +1,102 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <h2 class="text-black">Employee Data Modules</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title text-center text-danger">EmployeeTablesModule</h5>
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class="btn btn-dark btn-lg float-end" data-bs-toggle="modal"
+                            data-bs-target="#add">Add Employee</button>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- <div style="overflow-x:auto;"> -->
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-bordered table-danger">
+                        <thead>
+                            <tr class="text-center">
+                                <th scope="col">Id</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Body</th>
+                                <!-- <th scope="col">City</th> -->
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let get of data" class="text-center">
+                                <th>{{get.id}}</th>
+                                <th>{{get.title}}</th>
+                                <td>{{get.body}}</td>
+                                <!-- <td>{{get.City}}</td> -->
+
+                                <td>
+                                    <a class="btn bt2 btn-success badge rounded-pill"
+                                        [routerLink]="['/teacher_view/',get.id]">View</a> <button
+                                        class="btn bt2 btn-primary badge rounded-pill">Edit</button>
+                                    <button class="btn bt2 btn-danger badge rounded-pill ">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- Modal -->
+<!-- <form [formGroup]="form" (ngSubmit)="addblog()"> -->
+    <div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Please Fill the Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Full Name"
+                            formControlName="title" required>
+                        <!-- <div id="nameHelp" class="form-text">Write Your Full Name</div> -->
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Body</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter the body" formControlName="body" required>
+                        <!-- <div id="emailHelp" class="form-text">Write your Email</div> -->
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputCity" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1"
+                            placeholder="Write the Description" formControlName="description" required>
+                        <div id="cityHelp" class="form-text">Write your City Name</div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add Employee</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </form> -->
