@@ -12,7 +12,7 @@ export class DisplayComponent implements OnInit {
 
   ngOnInit(): void {
       this.ser.getdata().subscribe((res)=>{
-      console.log(res);
+      // console.log(res);
       this.data = res
     })
   }

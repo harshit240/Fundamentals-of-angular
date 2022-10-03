@@ -18,13 +18,12 @@ export class AddEmployeeComponent implements OnInit {
     body:new FormControl(''),
   })
   }
-  addblog()
-  {
-  // console.log(this.form.value);
+
+
+  addblog(){
+    // console.log(this.form.value);
   
-  
-  
-  this.a.bloginsert(this.form.value).subscribe((res)=>{
+    this.a.bloginsert(this.form.value).subscribe((res)=>{
     console.log(res);
   })
 

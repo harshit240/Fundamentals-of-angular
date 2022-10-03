@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -15,7 +14,6 @@ import { CareersComponent } from './careers/careers.component';
 import { FranchiseComponent } from './franchise/franchise.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { DatabModule } from './datab/datab.module';
-import { TeacherdataModule } from './teacherdata/teacherdata.module';
 import { EditComponent } from './edit/edit.component';
 import { IfComponent } from './if/if.component';
 import { ForComponent } from './for/for.component';
@@ -28,6 +26,7 @@ import { NewsapiComponent } from './newsapi/newsapi.component';
 import { EmployeeModule } from './employee/employee.module';
 import { TeacherModule } from './teacher/teacher.module';
 import { TeamModule } from './team/team.module';
+import { View1Component } from './view1/view1.component';
 
 
 
@@ -53,17 +52,18 @@ import { TeamModule } from './team/team.module';
     PipeComponent,
     ApiComponent,
     NewsapiComponent,
+    View1Component,
     
   ],
   imports: [
     BrowserModule,
     DatabModule,
-    TeacherdataModule,
     EmployeeModule,
     HttpClientModule,
     TeacherModule,
+    TeacherModule,
     TeamModule,
-    AppRoutingModule,
+    AppRoutingModule
     
   ],
   providers: [],

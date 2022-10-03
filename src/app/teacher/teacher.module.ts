@@ -1,23 +1,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { TeacherRoutingModule } from './teacher-routing.module';
-import { ViewComponent } from './view/view.component';
 import { DisplayComponent } from './display/display.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewTeacherComponent } from './view-teacher/view-teacher.component';
+import { EditTeacherComponent } from './edit-teacher/edit-teacher.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    ViewComponent,
-    DisplayComponent
+    ViewTeacherComponent,
+    DisplayComponent,
+    EditTeacherComponent
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     TeacherRoutingModule,
-    HttpClientModule
   ],
-  exports:[DisplayComponent]
-
+  exports:[
+    DisplayComponent,
+    EditTeacherComponent,
+    ViewTeacherComponent
+  ]
 })
 export class TeacherModule { }

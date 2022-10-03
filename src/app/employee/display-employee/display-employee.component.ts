@@ -17,19 +17,19 @@ export class DisplayEmployeeComponent implements OnInit {
   
   ngOnInit(): void {
     this.form=new FormGroup({
+    id:new FormControl(''),
     title:new FormControl(''),
-    description:new FormControl(''),
+    // description:new FormControl(''),
     body:new FormControl(''),
   })
 
-  this.a.showdata().
-  subscribe(data=>{console.log(data)
-  this.data=data
-  this.data1=this.data.getall
+  this.a.showdata().subscribe((data)=>{
+    // console.log(data)
+    this.data1=data
+    // this.data1=this.data.posts
 
-  // console.log(this.data);
-
-})
+    // console.log(this.data);
+  })
   
   }
   addblog()
@@ -37,9 +37,8 @@ export class DisplayEmployeeComponent implements OnInit {
   // console.log(this.form.value);
   
   
-  
   this.a.bloginsert(this.form.value).subscribe((res)=>{
-    console.log(res);
+    // console.log(res);
   })
   
 

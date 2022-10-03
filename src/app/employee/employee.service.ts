@@ -5,7 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class EmployeeService {
-  url = 'https://young-spire-25464.herokuapp.com/api/pn/'
+  // url = 'https://young-spire-25464.herokuapp.com/api/pn/'
+  url='https://jsonplaceholder.typicode.com/'
   constructor(private http: HttpClient) { }
   
   bloginsert(blogall:any){
@@ -14,7 +15,7 @@ export class EmployeeService {
   }
   
   showdata(){
-    return this.http.get(this.url+'getall')
+    return this.http.get(this.url+'posts')
   }
 
   viewdata(id:any){

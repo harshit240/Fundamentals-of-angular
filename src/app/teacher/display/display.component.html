@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="text-center">
-                    <h2 class="text-black">Teacher Modue data</h2>
+                    <h2 class="text-black">Teacher Module data</h2>
                 </div>
             </div>
         </div>
@@ -17,9 +17,7 @@
                             data-bs-target="#add">Add Employee</button>
                     </div>
                 </div>
-
                 <br>
-
                 <!-- <div style="overflow-x:auto;"> -->
                 <div class="table-responsive">
                     <table class="table table-striped table-hover table-bordered table-danger">
@@ -28,7 +26,6 @@
                                 <th scope="col">Id</th>
                                 <th scope="col">Title</th>
                                 <th scope="col">Body</th>
-                                <!-- <th scope="col">City</th> -->
                                 <th scope="col">Actions</th>
                             </tr>
                         </thead>
@@ -37,30 +34,28 @@
                                 <th>{{get.id}}</th>
                                 <th>{{get.title}}</th>
                                 <td>{{get.body}}</td>
-                                <!-- <td>{{get.City}}</td> -->
 
                                 <td>
                                     <a class="btn bt2 btn-success badge rounded-pill"
-                                        [routerLink]="['/teacher_view/',get.id]">View</a> <button
-                                        class="btn bt2 btn-primary badge rounded-pill">Edit</button>
-                                    <button class="btn bt2 btn-danger badge rounded-pill ">Delete</button>
+                                        [routerLink]="['/teacher_view/',get.id]">View</a>
+
+                                <a class="btn bt2 btn-primary badge rounded-pill"
+                                 [routerLink]="['/teacher_edit/',get.id]">Edit</a>
+                                    <a class="btn bt2 btn-danger badge rounded-pill">Delete</a>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
             </div>
         </div>
-
-
     </div>
 </div>
 
 
 <!-- Modal -->
 <!-- <form [formGroup]="form" (ngSubmit)="addblog()"> -->
-    <div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -73,14 +68,14 @@
                         <label for="exampleInputPassword1" class="form-label">Title</label>
                         <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Full Name"
                             formControlName="title" required>
-                        <!-- <div id="nameHelp" class="form-text">Write Your Full Name</div> -->
+                        <div id="nameHelp" class="form-text">Write Your Full Name</div>
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Body</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="Enter the body" formControlName="body" required>
-                        <!-- <div id="emailHelp" class="form-text">Write your Email</div> -->
+                        <div id="emailHelp" class="form-text">Write your Email</div>
                     </div>
 
                     <div class="mb-3">
@@ -98,5 +93,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 <!-- </form> -->

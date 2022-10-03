@@ -10,7 +10,7 @@
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title text-center text-danger">EmployeeTablesModule</h5>
+                <h5 class="card-title text-center text-danger">Employee TablesModule</h5>
                 <div class="row">
                     <div class="col-md-12 ">
                         <button type="button" class="btn btn-dark btn-lg float-end" data-bs-toggle="modal"
@@ -28,22 +28,21 @@
                                 <th scope="col">Id</th>
                                 <th scope="col">Title</th>
                                 <th scope="col">Body</th>
-                                <th scope="col">description</th>
+                                <!-- <th scope="col">description</th> -->
                                 <!-- <th scope="col">City</th> -->
                                 <th scope="col">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr *ngFor="let get of data1" class="text-center">
-                                <th>{{get._id}}</th>
+                                <th>{{get.id}}</th>
                                 <th>{{get.title}}</th>
                                 <td>{{get.body}}</td>
-                                <td>{{get.description}}</td>
+                                <!-- <td>{{get.description}}</td> -->
                                 <!-- <td>{{get.City}}</td> -->
-
                                 <td>
                                     <a class="btn bt2 btn-success badge rounded-pill"
-                                        [routerLink]="['/blogview/',get._id]">View</a> <button
+                                        [routerLink]="['/teacher_view/',get.id]">View</a> <button
                                         class="btn bt2 btn-primary badge rounded-pill">Edit</button>
                                     <button class="btn bt2 btn-danger badge rounded-pill ">Delete</button>
                                 </td>
