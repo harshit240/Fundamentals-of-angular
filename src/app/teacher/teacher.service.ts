@@ -18,4 +18,5 @@ export class TeacherService {
   updateblog(data: any, id: any) {
     return this.http.put(this.url + 'posts/' + id, data);
   }
+  
 }
