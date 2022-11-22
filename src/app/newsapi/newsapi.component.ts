@@ -19,7 +19,6 @@ export class NewsapiComponent implements OnInit {
       this.data1=this.data.articles
       console.log(this.data1);
      })
-     
   }
 
 }

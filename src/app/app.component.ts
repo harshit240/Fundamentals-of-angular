@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+ 
+
   title = 'Hyy I am parent';
 
   students:any[]=[
@@ -14,4 +17,19 @@ export class AppComponent {
     {id:3,name:'vijay',age:24,email:'601himanshusahu@gmail.com',address:"bhopal"},
     {id:4,name:'aakash',age:27,email:'601himanshusahu@gmail.com',address:"datia"},
   ]
+
+  showdata(){
+    console.log("Hello Himanshu!");
+  }
+  data="Hello Bhai"
+
+  //Receiving message from child
+  
+  Childmessage:any;
+  receiveMessage($event:any){
+    this.Childmessage = $event
+  }
+
+
+   
 }

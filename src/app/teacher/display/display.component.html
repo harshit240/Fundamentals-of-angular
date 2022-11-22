@@ -31,10 +31,9 @@
                         </thead>
                         <tbody>
                             <tr *ngFor="let get of data" class="text-center">
-                                <th>{{get.id}}</th>
-                                <th>{{get.title}}</th>
+                                <td>{{get.id}}</td>
+                                <td>{{get.title}}</td>
                                 <td>{{get.body}}</td>
-
                                 <td>
                                     <a class="btn bt2 btn-success badge rounded-pill"
                                         [routerLink]="['/teacher_view/',get.id]">View</a>

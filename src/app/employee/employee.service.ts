@@ -17,7 +17,6 @@ export class EmployeeService {
   showdata(){
     return this.http.get(this.url+'posts')
   }
-
   viewdata(id:any){
     return this.http.get(this.url+'blogview/'+id)
   }

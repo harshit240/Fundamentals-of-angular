@@ -27,6 +27,16 @@ import { EmployeeModule } from './employee/employee.module';
 import { TeacherModule } from './teacher/teacher.module';
 import { TeamModule } from './team/team.module';
 import { View1Component } from './view1/view1.component';
+import { ReactiveFormArrayComponent } from './reactive-form-array/reactive-form-array.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ViewchildComponent } from './viewchild/viewchild.component';
+import { ParentComponent } from './parent/parent.component';
+import { ObservableComponent } from './observable/observable.component';
+import { FromEventComponent } from './observable/from-event/from-event.component';
+import { IntervalComponent } from './observable/interval/interval.component';
+import { OfFromComponent } from './observable/of-from/of-from.component';
+import { ToArrayComponent } from './observable/to-array/to-array.component';
+import { CustomComponent } from './observable/custom/custom.component';
 
 
 
@@ -53,14 +63,23 @@ import { View1Component } from './view1/view1.component';
     ApiComponent,
     NewsapiComponent,
     View1Component,
+    ReactiveFormArrayComponent,
+    ViewchildComponent,
+    ParentComponent,
+    ObservableComponent,
+    FromEventComponent,
+    IntervalComponent,
+    OfFromComponent,
+    ToArrayComponent,
+    CustomComponent,
     
   ],
   imports: [
     BrowserModule,
     DatabModule,
     EmployeeModule,
+    ReactiveFormsModule,
     HttpClientModule,
-    TeacherModule,
     TeacherModule,
     TeamModule,
     AppRoutingModule

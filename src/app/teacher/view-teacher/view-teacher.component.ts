@@ -16,10 +16,9 @@ export class ViewTeacherComponent implements OnInit {
     this.id=this.r.snapshot.paramMap.get('id');
     // console.log(this.id);
     this.ser.teacher_view(this.id).subscribe((res)=>{
-      // console.log(res);
+      console.log(res);
       this.teacherview=res;
-      console.log(this.teacherview);
-      })
+    })
   }
 
 }

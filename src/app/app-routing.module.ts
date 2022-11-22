@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { fromEvent, observable } from 'rxjs';
 import { AboutComponent } from './about/about.component';
 import { BrandsComponent } from './brands/brands.component';
 import { CareersComponent } from './careers/careers.component';
@@ -9,6 +10,8 @@ import { DisplayEmployeeComponent } from './employee/display-employee/display-em
 import { ViewEmployeeComponent } from './employee/view-employee/view-employee.component';
 import { FranchiseComponent } from './franchise/franchise.component';
 import { HomeComponent } from './home/home.component';
+import { FromEventComponent } from './observable/from-event/from-event.component';
+import { ObservableComponent } from './observable/observable.component';
 import { OurTeamComponent } from './our-team/our-team.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PressReleaseComponent } from './press-release/press-release.component';
@@ -63,18 +66,13 @@ const routes: Routes = [
   //   path:"**",
   //   component:PagenotfoundComponent
   // },
-  {
-    path:'',
-    component:DisplayComponent
-  },
-  {
-    path:"teacher_view/:id",
-    component:ViewTeacherComponent
-  },
-  {
-    path:"teacher_edit/:id",
-    component:EditTeacherComponent
-  }
+  // {
+  //   path:'observable',
+  //   component:ObservableComponent ,children:[
+  //     {path:'fromEvent',component:FromEventComponent}
+
+  //   ]
+  // }
   
 ];
 

@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form [formGroup]="form" (ngSubmit)="add()">
+                <div class="form-group" formGroupName="userDetail">
+                    <div class="mb-3">
+                        <label class="form-label">Username</label>
+                        <input type="text" class="form-control" formControlName="username">
+                        <small class="text-danger" *ngIf="!form.get('userDetail.username').valid && form.get('userDetail.username').touched">* Please Enter Username</small>
+                      </div>
+                      <div class="mb-3">
+                          <label  class="form-label">Email</label>
+                          <input type="email" class="form-control" formControlName="email">
+                          <small class="text-danger" *ngIf="!form.get('userDetail.email').valid && form.get('userDetail.email').touched"> * Please Enter your Email</small>
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Course</label>
+                    <select formControlName="course">
+                        <option>Angular</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                    </select>
+                  </div><div class="mb-3">
+                    <label class="form-label" >Gender</label> <br>
+                    <input type="radio" formControlName="">Male<br>
+                    <input type="radio"formControlName="gender" >Female <br>
+                  </div>
+                  <div class="form-group" formArrayName="skills">
+                    <div class="mb-3">
+                        <label class="form-label">Skills</label>
+                        <ng-container *ngFor="let skill of form.get('skills').controls; index as i">
+                            <input type="text" class="form-control mt-2" placeholder="Add Skills" formControlName="{{i}}">
+                        </ng-container>
+                        
+                        <button class="btn btn-light btn-sm mt-3" (click)="Addskills()"> + Add Skills</button>
+                    </div>
+                     
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+              </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>

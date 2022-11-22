@@ -5,12 +5,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class TeacherService {
-  url = 'https://jsonplaceholder.typicode.com/';
-
+  // url = 'https://jsonplaceholder.typicode.com/';
+  url='http://localhost:3000/api/'
   constructor(private http: HttpClient) {}
   
   getdata() {
-    return this.http.get(this.url + 'posts');
+    return this.http.get(this.url + 'blogs');
   }
   teacher_view(id: any) {
     return this.http.get(this.url + 'posts/' + id);
